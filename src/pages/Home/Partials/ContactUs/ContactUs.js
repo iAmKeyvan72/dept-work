@@ -1,18 +1,21 @@
 import React from 'react';
 import {
-  StyledContactForm,
   StyledContactUsSection,
-  StyledContainer,
-  StyledSectionTitle,
+  StyledContactUsContainer,
+  StyledContactSectionTitle,
 } from './style';
+
+import ContactForm from './Partials/ContactForm/ContactForm';
 
 const ContactUs = () => {
   return (
     <StyledContactUsSection>
-      <StyledContainer>
-        <StyledSectionTitle title="questions? we are here to help!" />
-        <StyledContactForm />
-      </StyledContainer>
+      <StyledContactUsContainer>
+        <StyledContactSectionTitle>
+          questions? we are here to help!
+        </StyledContactSectionTitle>
+        <ContactForm />
+      </StyledContactUsContainer>
     </StyledContactUsSection>
   );
 };

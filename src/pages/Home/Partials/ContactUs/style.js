@@ -1,27 +1,21 @@
 import styled from 'styled-components';
-import ContactForm from './Partials/ContactForm/ContactForm';
-import Container from '../../../../components/Container/Container';
-import SectionTitle from '../../../../components/SectionTitle/SectionTitle';
+import { StyledContainer } from '../../../../components/Container/style';
+import { StyledSectionTitle } from '../../../../components/SectionTitle/style';
 
 export const StyledContactUsSection = styled.section`
-  padding: 2rem 0;
-`;
-
-export const StyledContainer = styled(Container)`
-  && {
-    @media (min-width: 768px) {
-      display: flex;
-    }
-  }
-`;
-
-export const StyledContactForm = styled(ContactForm)`
+  padding: 3rem 0;
   @media (min-width: 768px) {
-    flex: 2;
+    padding: 6rem 0;
   }
 `;
 
-export const StyledSectionTitle = styled(SectionTitle)`
+export const StyledContactUsContainer = styled(StyledContainer)`
+  @media (min-width: 768px) {
+    display: flex;
+  }
+`;
+
+export const StyledContactSectionTitle = styled(StyledSectionTitle)`
   @media (min-width: 768px) {
     flex: 1;
     text-align: left;

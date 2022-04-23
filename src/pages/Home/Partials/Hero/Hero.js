@@ -1,16 +1,20 @@
 import React from 'react';
 import Button from '../../../../components/Button/Button';
-import { StyledHero } from './style';
+import {
+  StyledHero,
+  StyledHeroButtonContainer,
+  StyledHeroTitle,
+} from './style';
 
 const Hero = ({ image, title, url }) => {
   return (
     <StyledHero background={image}>
-      <h1>{title}</h1>
-      <div className="heroBtnContainer">
+      <StyledHeroTitle>{title}</StyledHeroTitle>
+      <StyledHeroButtonContainer>
         <Button element="a" href={url} uiType="secondary">
           view case
         </Button>
-      </div>
+      </StyledHeroButtonContainer>
     </StyledHero>
   );
 };
