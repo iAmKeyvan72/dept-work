@@ -1,83 +1,34 @@
 import React from 'react';
+import FooterSiteLinks from './Partials/FooterSiteLinks/FooterSiteLinks';
+import SocialLinks from './Partials/SocialLinks/SocialLinks';
+import {
+  StyledFooter,
+  StyledFooterContents,
+  StyledFooterLinks,
+  StyledFooterWrapper,
+} from './style';
+import Container from '../../../../components/Container/Container';
+import GoToTop from './Partials/GoToTop/GoToTop';
+import FooterLogo from './Partials/FooterLogo/FooterLogo';
+import FooterInfo from './Partials/FooterInfo/FooterInfo';
 
 const Footer = () => {
   return (
-    <footer>
-      <div className="container">
-        <div className="footerLinks">
-          <a href="/" title="Dept" className="onlyDesktop">
-            <img
-              src={require('../../../../assets/images/logos/Tomtom_logo_zwart.jpg')}
-              alt="Dept"
-            />
-          </a>
-          <ul className="siteLinks">
-            <li>
-              <a href="/work" title="work">
-                Work
-              </a>
-            </li>
-            <li>
-              <a href="/work" title="work">
-                Work
-              </a>
-            </li>
-            <li>
-              <a href="/work" title="work">
-                Work
-              </a>
-            </li>
-            <li>
-              <a href="/work" title="work">
-                Work
-              </a>
-            </li>
-            <li>
-              <a href="/work" title="work">
-                Work
-              </a>
-            </li>
-            <li>
-              <a href="/work" title="work">
-                Work
-              </a>
-            </li>
-          </ul>
-          <ul className="socialLinks">
-            <li>
-              <a href="/work" title="work">
-                twitter
-              </a>
-            </li>
-            <li>
-              <a href="/work" title="work">
-                twitter
-              </a>
-            </li>
-            <li>
-              <a href="/work" title="work">
-                twitter
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div className="footerInfo">
-          <ul>
-            <li>Chamber of Commerce: 63464101</li>
-            <li>VAT: NL 8552.47.502.B01</li>
-            <li>
-              <a href="#" title="Terms and conditions">
-                Terms and conditions
-              </a>
-            </li>
-          </ul>
-          <p className="copyright">© 2018 Dept Agency</p>
-        </div>
-      </div>
-      <div className="goTopContainer onlyDesktop">
-        <button className="goTop">TOP</button>
-      </div>
-    </footer>
+    <StyledFooter>
+      <StyledFooterWrapper>
+        <Container>
+          <StyledFooterContents>
+            <StyledFooterLinks>
+              <FooterLogo />
+              <FooterSiteLinks />
+              <SocialLinks />
+            </StyledFooterLinks>
+            <FooterInfo />
+          </StyledFooterContents>
+        </Container>
+      </StyledFooterWrapper>
+      <GoToTop />
+    </StyledFooter>
   );
 };
 

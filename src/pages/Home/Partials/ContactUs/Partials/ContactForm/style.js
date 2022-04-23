@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 import { StyledInputText } from '../../../../../../components/InputText/style';
 
+export const StyledContactForm = styled.form``;
+
 export const StyledInputsWrapper = styled.div`
   @media (min-width: 768px) {
     display: flex;

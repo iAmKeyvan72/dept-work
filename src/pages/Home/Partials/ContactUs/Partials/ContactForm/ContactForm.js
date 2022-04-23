@@ -16,7 +16,7 @@ const ContactForm = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)}>
+    <StyledContactForm onSubmit={handleSubmit(onSubmit)}>
       <StyledInputsWrapper>
         <InputText
           name="name"
@@ -44,7 +44,7 @@ const ContactForm = () => {
       <Button element="button" uiType="primary" type="submit">
         Send
       </Button>
-    </form>
+    </StyledContactForm>
   );
 };
 
