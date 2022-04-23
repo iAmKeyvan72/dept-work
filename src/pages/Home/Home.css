@@ -1,0 +1,59 @@
+:root {
+    --background-main: #fff;
+    --background-lightBlue: #F3F6F6;
+    --primary: #1A18F7;
+    --secondary: #0E0E0E;
+    --lightSecondary: #A3A3A3;
+    --text-800: #272727;
+    --text-900: #0E0E0E;
+    --border: #DDDDDD;
+}
+
+@font-face {
+    font-family: "Teko";
+    src: url('../../assets/fonts/Teko/Teko-Regular.ttf');
+}
+
+body {
+    background: var(--background-main);
+    font-family: "Teko", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    color: var(--text-900);
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+.onlyDesktop {
+    display: none;
+}
+
+.clientsSection {
+    background-color: var(--background-lightBlue);
+    text-align: center;
+    padding: 2rem 0;
+}
+.sectionTitle {
+    font-size: 2rem;
+}
+.clientsDescription {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.clientsLogos ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 1rem auto;
+}
+@media screen and (min-width: 768px) {
+    .onlyDesktop {
+        display: block;
+    }
+}
