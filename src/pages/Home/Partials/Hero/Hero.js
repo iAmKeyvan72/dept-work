@@ -7,7 +7,7 @@ const Hero = ({ image, title, url }) => {
     <StyledHero background={image}>
       <h1>{title}</h1>
       <div className="heroBtnContainer">
-        <Button href={url} type="secondary">
+        <Button element="a" href={url} uiType="secondary">
           view case
         </Button>
       </div>

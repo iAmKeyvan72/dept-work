@@ -1,20 +1,27 @@
 import React from 'react';
 
 import {
-  StyledButton,
-  StyledLinkButton,
   StyledPrimaryButton,
+  StyledPrimaryLinkButton,
   StyledSecondaryButton,
+  StyledSecondaryLinkButton,
+  StyledLinkButton,
 } from './style';
 
-const Button = ({ type, ...rest }) => {
+const Button = ({ element, uiType, ...rest }) => {
   const buttonTypes = {
-    primary: { component: StyledPrimaryButton },
-    secondary: { component: StyledSecondaryButton },
-    link: { component: StyledLinkButton },
+    a: {
+      primary: { component: StyledPrimaryLinkButton },
+      secondary: { component: StyledSecondaryLinkButton },
+      link: { component: StyledLinkButton },
+    },
+    button: {
+      primary: { component: StyledPrimaryButton },
+      secondary: { component: StyledSecondaryButton },
+    },
   };
 
-  const ButtonComponent = buttonTypes[type].component;
+  const ButtonComponent = buttonTypes[element][uiType].component;
 
   return <ButtonComponent {...rest} />;
 };

@@ -19,9 +19,10 @@ const WorkCaseWithImage = ({ image, companyName, companyUrl, title }) => {
           <h2>{title}</h2>
         </a>
         <Button
-          type="link"
+          element="a"
+          uiType="link"
           href={`/${decodeURI(title)}`}
-          className="onlyMobile"
+          className="onlyDesktop"
         >
           view case
         </Button>

@@ -11,7 +11,12 @@ const WorkCaseNoImage = ({ companyName, companyUrl, title }) => {
       <a href={`/${decodeURI(title)}`} className="workTitle" title={title}>
         <h2>{title}</h2>
       </a>
-      <Button type="link" href={`/${decodeURI(title)}`} className="onlyDesktop">
+      <Button
+        element="a"
+        uiType="link"
+        href={`/${decodeURI(title)}`}
+        className="onlyDesktop"
+      >
         view case
       </Button>
     </StyledWorkCaseNoImage>

@@ -11,6 +11,8 @@ import {
   StyledClientsSection,
   StyledClientsSlider,
 } from './style';
+import SectionTitle from '../../../../components/SectionTitle/SectionTitle';
+import Container from '../../../../components/Container/Container';
 
 const Clients = () => {
   const sliderSettings = {
@@ -30,8 +32,8 @@ const Clients = () => {
   };
   return (
     <StyledClientsSection>
-      <div className="container">
-        <h3 className="sectionTitle">Clients</h3>
+      <Container>
+        <SectionTitle title="Clients" />
         <StyledClientSectionDescription>
           We value a great working relationship with our clients above all else.
           It’s why they often come to our parties. It’s also why we’re able to
@@ -43,7 +45,7 @@ const Clients = () => {
             <ClientLogo key={i} {...client} />
           ))}
         </StyledClientsSlider>
-      </div>
+      </Container>
     </StyledClientsSection>
   );
 };

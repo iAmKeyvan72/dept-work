@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
-export const StyledButton = styled.a`
+const buttonStyle = `
   color: #fff;
-  padding: 10px;
+  padding: 1rem 3rem;
   text-transform: uppercase;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
@@ -13,17 +13,19 @@ export const StyledButton = styled.a`
   display: block;
 `;
 
-export const StyledPrimaryButton = styled(StyledButton)`
+const primaryStyle = `
+  ${buttonStyle}
   background-color: var(--primary);
   color: var(--background-main);
 `;
 
-export const StyledSecondaryButton = styled(StyledButton)`
+const secondaryStyle = `
+  ${buttonStyle}
   background-color: var(--secondary);
   color: var(--background-main);
 `;
 
-export const StyledLinkButton = styled.a`
+const inlineStyle = `
   color: var(--primary);
   text-decoration: none;
   font-size: 1.25rem;
@@ -32,4 +34,22 @@ export const StyledLinkButton = styled.a`
     content: '▶';
     margin-right: 5px;
   }
+`;
+
+export const StyledButton = styled.button(buttonStyle);
+export const StyledAnchor = styled.a(buttonStyle);
+
+export const StyledPrimaryButton = styled(StyledButton)`
+  ${primaryStyle}
+`;
+export const StyledSecondaryButton = styled(StyledButton)`
+  ${secondaryStyle}
+`;
+
+export const StyledPrimaryLinkButton = StyledPrimaryButton.withComponent('a');
+export const StyledSecondaryLinkButton =
+  StyledSecondaryButton.withComponent('a');
+
+export const StyledLinkButton = styled.a`
+  ${inlineStyle}
 `;

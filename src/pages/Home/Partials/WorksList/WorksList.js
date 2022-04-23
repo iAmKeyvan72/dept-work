@@ -1,4 +1,5 @@
 import React from 'react';
+import Container from '../../../../components/Container/Container';
 import DynamicContent from '../../../../components/DynamicContent/DynamicContent';
 import Select from '../../../../components/Select/Select';
 
@@ -38,7 +39,7 @@ const WorksList = () => {
 
   return (
     <section className="worksSection">
-      <div className="container">
+      <Container>
         <StyledFiltersContainer>
           <Select label="Show me" name="categories" options={categories} />
           <Select label="in" name="industries" options={industries} />
@@ -46,7 +47,7 @@ const WorksList = () => {
         <StyledListSection>
           <DynamicContent list={works} />
         </StyledListSection>
-      </div>
+      </Container>
     </section>
   );
 };

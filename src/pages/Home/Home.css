@@ -7,6 +7,7 @@
     --text-800: #272727;
     --text-900: #0E0E0E;
     --border: #DDDDDD;
+    --error: #FF2929;
 }
 
 @font-face {
@@ -24,18 +25,8 @@ body {
     padding: 0;
 }
 
-.container {
-    width: 90%;
-    max-width: 1024px;
-    margin: auto;
-}
-
 .onlyDesktop {
     display: none;
-}
-
-.sectionTitle {
-    font-size: 2rem;
 }
 
 @media screen and (min-width: 768px) {
