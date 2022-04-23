@@ -1,0 +1,98 @@
+[
+  {
+    "id": "1",
+    "name": "nivea",
+    "url": "https://www.nivea.com/",
+    "image": "https://dlmoviez.ir/musicisho?path=src/dept-images/logos/nivea.png"
+  },
+  {
+    "id": "2",
+    "name": "mona",
+    "url": "https://www.nivea.com/",
+    "image": "https://dlmoviez.ir/musicisho?path=src/dept-images/logos/mona.png"
+  },
+  {
+    "id": "3",
+    "name": "transavia",
+    "url": "https://www.transavia.com/",
+    "image": "https://dlmoviez.ir/musicisho?path=src/dept-images/logos/transavia.png"
+  },
+  {
+    "id": "4",
+    "name": "zalando",
+    "url": "https://www.zalando.com/",
+    "image": "https://dlmoviez.ir/musicisho?path=src/dept-images/logos/zalando.png"
+  },
+  {
+    "id": "5",
+    "name": "tomtom",
+    "url": "https://www.tomtom.com/",
+    "image": "https://dlmoviez.ir/musicisho?path=src/dept-images/logos/tomtom.png"
+  },
+  {
+    "id": "6",
+    "name": "unilever",
+    "url": "https://www.unilever.com/",
+    "image": "https://dlmoviez.ir/musicisho?path=src/dept-images/logos/unilever.png"
+  },
+  {
+    "id": "7",
+    "name": "adidas",
+    "url": "https://www.adidas.com/",
+    "image": "https://dlmoviez.ir/musicisho?path=src/dept-images/logos/adidas.png"
+  },
+  {
+    "id": "8",
+    "name": "pathe",
+    "url": "https://www.pathe.com/",
+    "image": "https://dlmoviez.ir/musicisho?path=src/dept-images/logos/pathe.png"
+  },
+  {
+    "id": "9",
+    "name": "abn",
+    "url": "https://www.abn.com/",
+    "image": "https://dlmoviez.ir/musicisho?path=src/dept-images/logos/abn.png"
+  },
+  {
+    "id": "10",
+    "name": "triumph",
+    "url": "https://www.triumph.com/",
+    "image": "https://dlmoviez.ir/musicisho?path=src/dept-images/logos/triumph.png"
+  },
+  {
+    "id": "11",
+    "name": "microsoft",
+    "url": "https://www.microsoft.com/",
+    "image": "https://dlmoviez.ir/musicisho?path=src/dept-images/logos/microsoft.png"
+  },
+  {
+    "id": "12",
+    "name": "oxxio",
+    "url": "https://www.oxxio.com/",
+    "image": "https://dlmoviez.ir/musicisho?path=src/dept-images/logos/oxxio.png"
+  },
+  {
+    "id": "13",
+    "name": "nn",
+    "url": "https://www.nn.com/",
+    "image": "https://dlmoviez.ir/musicisho?path=src/dept-images/logos/nn.png"
+  },
+  {
+    "id": "14",
+    "name": "ziggo",
+    "url": "https://www.ziggo.com/",
+    "image": "https://dlmoviez.ir/musicisho?path=src/dept-images/logos/ziggo.png"
+  },
+  {
+    "id": "15",
+    "name": "walibi",
+    "url": "https://www.walibi.com/",
+    "image": "https://dlmoviez.ir/musicisho?path=src/dept-images/logos/walibi.png"
+  },
+  {
+    "id": "16",
+    "name": "klm",
+    "url": "https://www.klm.com/",
+    "image": "https://dlmoviez.ir/musicisho?path=src/dept-images/logos/klm.png"
+  }
+]

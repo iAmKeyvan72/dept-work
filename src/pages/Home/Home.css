@@ -26,6 +26,7 @@ body {
 
 .container {
     width: 90%;
+    max-width: 1024px;
     margin: auto;
 }
 
@@ -33,25 +34,10 @@ body {
     display: none;
 }
 
-.clientsSection {
-    background-color: var(--background-lightBlue);
-    text-align: center;
-    padding: 2rem 0;
-}
 .sectionTitle {
     font-size: 2rem;
 }
-.clientsDescription {
-    font-family: Arial, Helvetica, sans-serif;
-}
 
-.clientsLogos ul {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    margin: 1rem auto;
-}
 @media screen and (min-width: 768px) {
     .onlyDesktop {
         display: block;
