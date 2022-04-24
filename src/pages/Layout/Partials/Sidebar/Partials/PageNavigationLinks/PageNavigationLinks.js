@@ -1,7 +1,10 @@
 import React from 'react';
-import { NavLink, useLocation } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
-import { StyledPageNavigationLinks } from './style';
+import {
+  StyledPageNavigationLinks,
+  StyledPageNavigationLinksWrapper,
+} from './style';
 
 const links = [
   {
@@ -43,17 +46,17 @@ const links = [
   },
 ];
 
-const PageNavigationLinks = () => {
+const PageNavigationLinks = ({ toggleMenu }) => {
   return (
-    <div>
+    <StyledPageNavigationLinksWrapper>
       <StyledPageNavigationLinks>
         {links.map((link) => (
-          <li key={link.name}>
+          <li key={link.name} onClick={() => toggleMenu()}>
             <NavLink to={link.url}>{link.name}</NavLink>
           </li>
         ))}
       </StyledPageNavigationLinks>
-    </div>
+    </StyledPageNavigationLinksWrapper>
   );
 };
 

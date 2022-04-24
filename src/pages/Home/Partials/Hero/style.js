@@ -1,30 +1,40 @@
 import styled from 'styled-components';
+import { StyledContainer } from '../../../../components/Container/style';
 
 export const StyledHero = styled.section`
   background-image: ${(props) => `url(${props.background})`};
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center bottom;
+  background-position: center;
   height: 50vh;
   display: flex;
   flex-direction: column;
 
   @media (min-width: 768px) {
-    margin: 1rem;
-    min-height: 70vh;
+    border: 1rem solid var(--background-main);
+    height: 90vh;
     position: relative;
-    padding-top: 3rem;
   }
+`;
+
+export const StyledHeroContainer = styled(StyledContainer)`
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  width: 100%;
+  height: 100%;
 `;
 
 export const StyledHeroTitle = styled.h1`
   text-transform: uppercase;
   font-size: 10rem;
   width: 90%;
-  margin: auto;
+  margin: auto 0;
+  margin-left: 2rem;
   line-height: 1;
 
   @media (min-width: 768px) {
+    margin: auto 0;
     font-size: 15rem;
   }
   @media (min-width: 1024px) {
@@ -45,7 +55,7 @@ export const StyledHeroButtonContainer = styled.div`
     a {
       margin: 10px auto;
       position: absolute;
-      right: 5%;
+      right: 2rem;
       bottom: 10px;
     }
   }

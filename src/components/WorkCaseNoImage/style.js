@@ -5,6 +5,7 @@ export const StyledWorkCaseNoImageListItem = styled.li`
     display: flex;
     flex-direction: column;
     padding: 2rem 0;
+    margin: 0 2rem;
     flex: 1;
   }
 `;

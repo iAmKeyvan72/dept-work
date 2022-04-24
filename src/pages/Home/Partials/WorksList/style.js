@@ -7,6 +7,7 @@ export const StyledFiltersContainer = styled.div`
   align-items: flex-start;
 
   @media (min-width: 768px) {
+    margin-right: 2rem;
     flex-direction: row;
     justify-content: flex-end;
   }

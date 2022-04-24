@@ -5,6 +5,7 @@ export const StyledClientsSection = styled.section`
   background-color: var(--background-lightBlue);
   text-align: center;
   padding: 2rem 0;
+  margin-top: 5rem;
 `;
 
 export const StyledClientsSlider = styled(Slider)`

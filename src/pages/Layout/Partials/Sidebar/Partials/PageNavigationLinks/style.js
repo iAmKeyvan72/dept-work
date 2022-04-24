@@ -1,7 +1,30 @@
 import styled from 'styled-components';
 
+export const StyledPageNavigationLinksWrapper = styled.div`
+  display: flex;
+
+  @media (min-width: 768px) {
+    --mask-top-height: 2rem;
+    --mask-bottom-height: 10rem;
+    --mask-image-content: linear-gradient(
+      to bottom,
+      transparent,
+      black var(--mask-top-height),
+      black calc(100% - var(--mask-bottom-height)),
+      transparent
+    );
+    --mask-size-content: 100% 100%;
+
+    mask-image: var(--mask-image-content);
+    mask-size: var(--mask-size-content);
+    mask-position: 0 0, 100% 0;
+    mask-repeat: no-repeat, no-repeat;
+  }
+`;
+
 export const StyledPageNavigationLinks = styled.ul`
   display: flex;
+  flex: 1;
   flex-direction: column;
   color: var(--background-main);
 
@@ -31,6 +54,15 @@ export const StyledPageNavigationLinks = styled.ul`
   }
 
   @media (min-width: 768px) {
+    height: 80vh;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
     li {
       a {
         font-size: 7rem;
