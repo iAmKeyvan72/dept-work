@@ -1,48 +1,31 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import Container from '../../../../components/Container/Container';
 import DynamicContent from '../../../../components/DynamicContent/DynamicContent';
 import Select from '../../../../components/Select/Select';
+import {
+  getCategories,
+  getIndustries,
+  getWorks,
+} from '../../../../ducks/home/selectors';
 
-import works from '../../../../mocks/works.json';
 import { StyledFiltersContainer, StyledListSection } from './style';
 
-const WorksList = () => {
-  const categories = [
-    {
-      label: 'all work',
-      value: 'all',
-    },
-    {
-      label: 'all work',
-      value: 'all',
-    },
-    {
-      label: 'all work',
-      value: 'all',
-    },
-  ];
-
-  const industries = [
-    {
-      label: 'all industries',
-      value: 'all',
-    },
-    {
-      label: 'all industries',
-      value: 'all',
-    },
-    {
-      label: 'all industries',
-      value: 'all',
-    },
-  ];
-
+const WorksList = ({ works, industries, categories }) => {
   return (
     <section className="worksSection">
       <Container>
         <StyledFiltersContainer>
-          <Select label="Show me" name="categories" options={categories} />
-          <Select label="in" name="industries" options={industries} />
+          <Select
+            label="Show me"
+            name="categories"
+            options={['all works', ...categories]}
+          />
+          <Select
+            label="in"
+            name="industries"
+            options={['all industries', ...industries]}
+          />
         </StyledFiltersContainer>
         <StyledListSection>
           <DynamicContent list={works} />
@@ -52,4 +35,10 @@ const WorksList = () => {
   );
 };
 
-export default WorksList;
+const mapStateToProps = (state) => ({
+  works: getWorks(state),
+  industries: getIndustries(state),
+  categories: getCategories(state),
+});
+
+export default connect(mapStateToProps)(WorksList);

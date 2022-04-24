@@ -22,7 +22,7 @@ const DynamicContent = ({ list }) => {
 
     works.forEach((work, index) => {
       const workListType = workListTypes[work.type];
-      worksList.push(<workListType.component {...work} />);
+      worksList.push(<workListType.component key={index} {...work} />);
     });
 
     return worksList;

@@ -1,10 +1,8 @@
 import React from 'react';
-import Slider from 'react-slick';
 
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
-import clients from '../../../../mocks/clients.json';
 import ClientLogo from '../../../../components/ClientLogo/ClientLogo';
 import {
   StyledClientSectionDescription,
@@ -13,8 +11,10 @@ import {
 } from './style';
 import SectionTitle from '../../../../components/SectionTitle/SectionTitle';
 import Container from '../../../../components/Container/Container';
+import { connect } from 'react-redux';
+import { getClients } from '../../../../ducks/home/selectors';
 
-const Clients = () => {
+const Clients = ({ clients }) => {
   const sliderSettings = {
     infinite: true,
     centerPadding: '20px',
@@ -50,4 +50,8 @@ const Clients = () => {
   );
 };
 
-export default Clients;
+const mapStateToProps = (state) => ({
+  clients: getClients(state),
+});
+
+export default connect(mapStateToProps)(Clients);

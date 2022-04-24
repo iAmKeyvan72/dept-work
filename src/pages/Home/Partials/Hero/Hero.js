@@ -1,5 +1,7 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import Button from '../../../../components/Button/Button';
+import { getHero } from '../../../../ducks/home/selectors';
 import {
   StyledHero,
   StyledHeroButtonContainer,
@@ -19,4 +21,10 @@ const Hero = ({ image, title, url }) => {
   );
 };
 
-export default Hero;
+const mapStateToProps = (state) => ({
+  image: getHero(state).image,
+  title: getHero(state).title,
+  url: getHero(state).url,
+});
+
+export default connect(mapStateToProps)(Hero);
