@@ -9,7 +9,7 @@ const FooterInfo = () => {
         <li>Chamber of Commerce: 63464101</li>
         <li>VAT: NL 8552.47.502.B01</li>
         <li>
-          <a href="#" title="Terms and conditions">
+          <a href="/terms" title="Terms and conditions">
             Terms and conditions
           </a>
         </li>
