@@ -56,7 +56,7 @@ export const StyledHeroButtonContainer = styled.div`
       margin: 10px auto;
       position: absolute;
       right: 2rem;
-      bottom: 10px;
+      bottom: 3rem;
     }
   }
 `;
