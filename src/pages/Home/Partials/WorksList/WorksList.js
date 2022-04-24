@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { connect } from 'react-redux';
+import { useSearchParams } from 'react-router-dom';
 import Container from '../../../../components/Container/Container';
 import DynamicContent from '../../../../components/DynamicContent/DynamicContent';
 import Select from '../../../../components/Select/Select';
@@ -20,12 +21,15 @@ const WorksList = ({
   filterWorks,
   filteredWorks,
 }) => {
-  const [category, setCategory] = useState(undefined);
-  const [industry, setIndustry] = useState(undefined);
+  const [search, setSearch] = useSearchParams();
+
+  const [category, setCategory] = useState(undefined || search.get('category'));
+  const [industry, setIndustry] = useState(undefined || search.get('industry'));
 
   useEffect(() => {
     filterWorks(category, industry);
-  }, [category, industry, filterWorks]);
+    (category || industry) && setSearch({ category, industry });
+  }, [category, industry, filterWorks, setSearch]);
 
   return (
     <section className="worksSection">
@@ -34,14 +38,14 @@ const WorksList = ({
           <Select
             label="Show me"
             name="categories"
-            value={category}
+            value={category || search.get('category')}
             onChange={(e) => setCategory(e.target.value)}
             options={['all works', ...categories]}
           />
           <Select
             label="in"
             name="industries"
-            value={industry}
+            value={industry || search.get('industry')}
             onChange={(e) => setIndustry(e.target.value)}
             options={['all industries', ...industries]}
           />
