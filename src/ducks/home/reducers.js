@@ -27,6 +27,45 @@ const homeReducer = (state = initialState, action) => {
         error: payload,
         loading: false,
       };
+
+    case types.GET_FILTERED_WORKS: {
+      const { category, industry } = payload;
+      const categoryLowerCase = category?.toLowerCase();
+      const industryLowerCase = industry?.toLowerCase();
+
+      const works = state.data.find((item) => item.type === 'works');
+      const testimonials = works.data.filter(
+        (item) => item.type === 'testimonials'
+      );
+      const filteredWorks = works.data.filter((item) => {
+        if (
+          categoryLowerCase &&
+          item.category?.toLowerCase() !== categoryLowerCase
+        ) {
+          return false;
+        }
+        if (
+          industryLowerCase &&
+          item.industry?.toLowerCase() !== industryLowerCase
+        ) {
+          return false;
+        }
+        return true;
+      });
+      return {
+        ...state,
+        data: state.data?.map((item) =>
+          item.type === 'works'
+            ? {
+                type: 'works',
+                data: works?.data,
+                filteredData: [...filteredWorks, ...testimonials],
+              }
+            : item
+        ),
+      };
+    }
+
     default:
       return state;
   }

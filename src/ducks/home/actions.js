@@ -19,3 +19,8 @@ export const getHomeListError = (payload) => ({
   type: types.GET_HOME_LIST_ERROR,
   payload,
 });
+
+export const getFilteredWorks = (payload) => ({
+  type: types.GET_FILTERED_WORKS,
+  payload,
+});

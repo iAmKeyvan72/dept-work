@@ -14,6 +14,11 @@ export const getWorks = createSelector(getHome, (data) => {
   return works.data;
 });
 
+export const filteredWorks = createSelector(getHome, (data) => {
+  const works = data.find((item) => item.type === 'works');
+  return works.filteredData;
+});
+
 export const getClients = createSelector(getHome, (data) => {
   const clients = data.find((item) => item.type === 'clients');
   return clients.data;

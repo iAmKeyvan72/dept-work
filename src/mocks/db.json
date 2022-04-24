@@ -119,7 +119,8 @@
           "companyName": "Bol.com",
           "companyUrl": "https://bol.com",
           "image": "https://dlmoviez.ir/musicisho?path=src/dept-images/bolcom.png",
-          "industry": "ecommerce"
+          "industry": "ecommerce",
+          "category": "digital marketing"
         },
         {
           "id": "2",
@@ -128,7 +129,8 @@
           "companyName": "Kempen",
           "companyUrl": "https://www.kempen.com/",
           "image": "https://dlmoviez.ir/musicisho?path=src/dept-images/kempen.png",
-          "industry": "ecommerce"
+          "industry": "ecommerce",
+          "category": "mobile app"
         },
         {
           "id": "3",
@@ -137,7 +139,8 @@
           "companyName": "Philips",
           "companyUrl": "https://www.philips.nl/",
           "image": "https://dlmoviez.ir/musicisho?path=src/dept-images/philips.png",
-          "industry": "ecommerce"
+          "industry": "ecommerce",
+          "category": "website"
         },
         {
           "id": "4",
@@ -146,7 +149,8 @@
           "companyName": "Gemeentemusem",
           "companyUrl": "https://www.kunstmuseum.nl/",
           "image": "https://dlmoviez.ir/musicisho?path=src/dept-images/gemeentemuseum.png",
-          "industry": "socialMedia"
+          "industry": "socialMedia",
+          "category": "website"
         },
         {
           "id": "7",
@@ -155,7 +159,8 @@
           "companyName": "Florensis",
           "companyUrl": "https://www.florensis.com/nl-nl/",
           "image": "https://dlmoviez.ir/musicisho?path=src/dept-images/florensis.png",
-          "industry": "socialMedia"
+          "industry": "socialMedia",
+          "category": "digital marketing"
         },
         {
           "id": "5",
@@ -163,7 +168,8 @@
           "title": "Tapping into Ireland’s unique gaming culture and bringing a fresh flavour to their Xbox social media channels",
           "companyName": "Microsoft",
           "companyUrl": "https://www.microsoft.com/",
-          "industry": "streaming"
+          "industry": "streaming",
+          "category": "digital marketing"
         },
         {
           "id": "6",
@@ -171,7 +177,8 @@
           "title": "Integrating existing content into O’Neill’s new e-commerce platform",
           "companyName": "O’NEILL",
           "companyUrl": "https://eu.oneill.com/",
-          "industry": "streaming"
+          "industry": "streaming",
+          "category": "mobile app"
         },
         {
           "id": "8",
@@ -180,7 +187,8 @@
           "companyName": "Be Lighting",
           "companyUrl": "https://www.lightingcompany.co.uk/",
           "image": "https://dlmoviez.ir/musicisho?path=src/dept-images/lightning.png",
-          "industry": "streaming"
+          "industry": "streaming",
+          "category": "digital marketing"
         },
         {
           "id": "9",
@@ -189,7 +197,8 @@
           "companyName": "Tui",
           "companyUrl": "https://www.tuigroup.com/en-en",
           "image": "https://dlmoviez.ir/musicisho?path=src/dept-images/tui.png",
-          "industry": "cosmetic"
+          "industry": "cosmetic",
+          "category": "mobile app"
         },
         {
           "id": "10",
@@ -197,7 +206,8 @@
           "title": "Enhancing customer experience for personalised holiday planning using real time data",
           "companyName": "Butlins",
           "companyUrl": "https://www.butlins.com/",
-          "industry": "cosmetic"
+          "industry": "cosmetic",
+          "category": "website"
         },
         {
           "id": "11",
@@ -205,7 +215,8 @@
           "title": "Predicting booking behavior for holidays with smart data, voice search and machine learning",
           "companyName": "Vacanseselect",
           "companyUrl": "https://www.vacanceselect.com/uk/about-us/",
-          "industry": "cosmetic"
+          "industry": "cosmetic",
+          "category": "digital marketing"
         },
         {
           "id": "12",
@@ -214,7 +225,8 @@
           "companyName": "Chocomel",
           "companyUrl": "https://www.chocomel.com/nl-nl",
           "image": "https://dlmoviez.ir/musicisho?path=src/dept-images/chocomel.png",
-          "industry": "hr"
+          "industry": "hr",
+          "category": "website"
         },
         {
           "id": "13",
@@ -223,7 +235,8 @@
           "companyName": "JBL",
           "companyUrl": "https://www.jbl.nl/",
           "image": "https://dlmoviez.ir/musicisho?path=src/dept-images/jbl.png",
-          "industry": "hr"
+          "industry": "hr",
+          "category": "digital marketing"
         },
         {
           "id": "14",
@@ -232,7 +245,8 @@
           "companyName": "Zalando",
           "companyUrl": "https://www.zalando.nl/",
           "image": "https://dlmoviez.ir/musicisho?path=src/dept-images/zalando.png",
-          "industry": "hr"
+          "industry": "hr",
+          "category": "mobile app"
         },
         {
           "id": "15",
@@ -241,7 +255,8 @@
           "companyName": "Koninklijke Bibliotheek",
           "companyUrl": "https://www.kb.nl/en",
           "image": "https://dlmoviez.ir/musicisho?path=src/dept-images/koninklijke-bibliotheek.png",
-          "industry": "music"
+          "industry": "music",
+          "category": "website"
         },
         {
           "id": "16",
@@ -258,7 +273,8 @@
           "companyName": "Liberty Global",
           "companyUrl": "https://www.libertyglobal.com/",
           "image": "https://dlmoviez.ir/musicisho?path=src/dept-images/liberty-global.png",
-          "industry": "music"
+          "industry": "music",
+          "category": "mobile app"
         },
         {
           "id": "18",
@@ -267,7 +283,8 @@
           "companyName": "Arla",
           "companyUrl": "https://www.arla.com/",
           "image": "https://dlmoviez.ir/musicisho?path=src/dept-images/arla.png",
-          "industry": "music"
+          "industry": "music",
+          "category": "website"
         }
       ]
     },

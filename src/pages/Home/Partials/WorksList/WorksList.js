@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { connect } from 'react-redux';
 import Container from '../../../../components/Container/Container';
 import DynamicContent from '../../../../components/DynamicContent/DynamicContent';
 import Select from '../../../../components/Select/Select';
+import { getFilteredWorks } from '../../../../ducks/home/actions';
 import {
+  filteredWorks,
   getCategories,
   getIndustries,
   getWorks,
@@ -11,7 +13,20 @@ import {
 
 import { StyledFiltersContainer, StyledListSection } from './style';
 
-const WorksList = ({ works, industries, categories }) => {
+const WorksList = ({
+  works,
+  industries,
+  categories,
+  filterWorks,
+  filteredWorks,
+}) => {
+  const [category, setCategory] = useState(undefined);
+  const [industry, setIndustry] = useState(undefined);
+
+  useEffect(() => {
+    filterWorks(category, industry);
+  }, [category, industry, filterWorks]);
+
   return (
     <section className="worksSection">
       <Container>
@@ -19,16 +34,20 @@ const WorksList = ({ works, industries, categories }) => {
           <Select
             label="Show me"
             name="categories"
+            value={category}
+            onChange={(e) => setCategory(e.target.value)}
             options={['all works', ...categories]}
           />
           <Select
             label="in"
             name="industries"
+            value={industry}
+            onChange={(e) => setIndustry(e.target.value)}
             options={['all industries', ...industries]}
           />
         </StyledFiltersContainer>
         <StyledListSection>
-          <DynamicContent list={works} />
+          <DynamicContent list={filteredWorks ? filteredWorks : works} />
         </StyledListSection>
       </Container>
     </section>
@@ -39,6 +58,12 @@ const mapStateToProps = (state) => ({
   works: getWorks(state),
   industries: getIndustries(state),
   categories: getCategories(state),
+  filteredWorks: filteredWorks(state),
 });
 
-export default connect(mapStateToProps)(WorksList);
+const mapDispatchToProps = (dispatch) => ({
+  filterWorks: (category, industry) =>
+    dispatch(getFilteredWorks({ category, industry })),
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(WorksList);
