@@ -6,6 +6,7 @@ import { default as categories } from './home/categories/reducers';
 import { default as hero } from './home/hero/reducers';
 import { default as industries } from './home/industries/reducers';
 import { default as works } from './home/works/reducers';
+import { default as contactUs } from './home/contactUs/reducers';
 
 export default combineReducers({
   home,
@@ -14,4 +15,5 @@ export default combineReducers({
   categories,
   hero,
   works,
+  contactUs,
 });
