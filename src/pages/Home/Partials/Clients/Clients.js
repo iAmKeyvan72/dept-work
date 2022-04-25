@@ -30,6 +30,7 @@ const Clients = ({ clients }) => {
       },
     ],
   };
+
   return (
     <StyledClientsSection>
       <Container>

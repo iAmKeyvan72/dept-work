@@ -1,300 +1,327 @@
 {
-  "home": [
-    {
-      "type": "hero",
-      "data": {
-        "title": "Work",
-        "image": "https://dlmoviez.ir/musicisho?path=src/dept-images/header.jpg",
-        "url": "https://dept.com"
+  "home": {
+    "hero": {
+      "title": "Work",
+      "image": "https://dlmoviez.ir/musicisho?path=src/dept-images/header.jpg",
+      "url": "https://dept.com"
+    },
+    "clients": [
+      {
+        "id": "1",
+        "name": "nivea",
+        "url": "https://www.nivea.com/",
+        "image": "https://dlmoviez.ir/musicisho?path=src/dept-images/logos/nivea.png"
+      },
+      {
+        "id": "2",
+        "name": "mona",
+        "url": "https://www.nivea.com/",
+        "image": "https://dlmoviez.ir/musicisho?path=src/dept-images/logos/mona.png"
+      },
+      {
+        "id": "3",
+        "name": "transavia",
+        "url": "https://www.transavia.com/",
+        "image": "https://dlmoviez.ir/musicisho?path=src/dept-images/logos/transavia.png"
+      },
+      {
+        "id": "4",
+        "name": "zalando",
+        "url": "https://www.zalando.com/",
+        "image": "https://dlmoviez.ir/musicisho?path=src/dept-images/logos/zalando.png"
+      },
+      {
+        "id": "5",
+        "name": "tomtom",
+        "url": "https://www.tomtom.com/",
+        "image": "https://dlmoviez.ir/musicisho?path=src/dept-images/logos/tomtom.png"
+      },
+      {
+        "id": "6",
+        "name": "unilever",
+        "url": "https://www.unilever.com/",
+        "image": "https://dlmoviez.ir/musicisho?path=src/dept-images/logos/unilever.png"
+      },
+      {
+        "id": "7",
+        "name": "adidas",
+        "url": "https://www.adidas.com/",
+        "image": "https://dlmoviez.ir/musicisho?path=src/dept-images/logos/adidas.png"
+      },
+      {
+        "id": "8",
+        "name": "pathe",
+        "url": "https://www.pathe.com/",
+        "image": "https://dlmoviez.ir/musicisho?path=src/dept-images/logos/pathe.png"
+      },
+      {
+        "id": "9",
+        "name": "abn",
+        "url": "https://www.abn.com/",
+        "image": "https://dlmoviez.ir/musicisho?path=src/dept-images/logos/abn.png"
+      },
+      {
+        "id": "10",
+        "name": "triumph",
+        "url": "https://www.triumph.com/",
+        "image": "https://dlmoviez.ir/musicisho?path=src/dept-images/logos/triumph.png"
+      },
+      {
+        "id": "11",
+        "name": "microsoft",
+        "url": "https://www.microsoft.com/",
+        "image": "https://dlmoviez.ir/musicisho?path=src/dept-images/logos/microsoft.png"
+      },
+      {
+        "id": "12",
+        "name": "oxxio",
+        "url": "https://www.oxxio.com/",
+        "image": "https://dlmoviez.ir/musicisho?path=src/dept-images/logos/oxxio.png"
+      },
+      {
+        "id": "13",
+        "name": "nn",
+        "url": "https://www.nn.com/",
+        "image": "https://dlmoviez.ir/musicisho?path=src/dept-images/logos/nn.png"
+      },
+      {
+        "id": "14",
+        "name": "ziggo",
+        "url": "https://www.ziggo.com/",
+        "image": "https://dlmoviez.ir/musicisho?path=src/dept-images/logos/ziggo.png"
+      },
+      {
+        "id": "15",
+        "name": "walibi",
+        "url": "https://www.walibi.com/",
+        "image": "https://dlmoviez.ir/musicisho?path=src/dept-images/logos/walibi.png"
+      },
+      {
+        "id": "16",
+        "name": "klm",
+        "url": "https://www.klm.com/",
+        "image": "https://dlmoviez.ir/musicisho?path=src/dept-images/logos/klm.png"
       }
-    },
-    {
-      "type": "clients",
-      "data": [
-        {
-          "id": "1",
-          "name": "nivea",
-          "url": "https://www.nivea.com/",
-          "image": "https://dlmoviez.ir/musicisho?path=src/dept-images/logos/nivea.png"
-        },
-        {
-          "id": "2",
-          "name": "mona",
-          "url": "https://www.nivea.com/",
-          "image": "https://dlmoviez.ir/musicisho?path=src/dept-images/logos/mona.png"
-        },
-        {
-          "id": "3",
-          "name": "transavia",
-          "url": "https://www.transavia.com/",
-          "image": "https://dlmoviez.ir/musicisho?path=src/dept-images/logos/transavia.png"
-        },
-        {
-          "id": "4",
-          "name": "zalando",
-          "url": "https://www.zalando.com/",
-          "image": "https://dlmoviez.ir/musicisho?path=src/dept-images/logos/zalando.png"
-        },
-        {
-          "id": "5",
-          "name": "tomtom",
-          "url": "https://www.tomtom.com/",
-          "image": "https://dlmoviez.ir/musicisho?path=src/dept-images/logos/tomtom.png"
-        },
-        {
-          "id": "6",
-          "name": "unilever",
-          "url": "https://www.unilever.com/",
-          "image": "https://dlmoviez.ir/musicisho?path=src/dept-images/logos/unilever.png"
-        },
-        {
-          "id": "7",
-          "name": "adidas",
-          "url": "https://www.adidas.com/",
-          "image": "https://dlmoviez.ir/musicisho?path=src/dept-images/logos/adidas.png"
-        },
-        {
-          "id": "8",
-          "name": "pathe",
-          "url": "https://www.pathe.com/",
-          "image": "https://dlmoviez.ir/musicisho?path=src/dept-images/logos/pathe.png"
-        },
-        {
-          "id": "9",
-          "name": "abn",
-          "url": "https://www.abn.com/",
-          "image": "https://dlmoviez.ir/musicisho?path=src/dept-images/logos/abn.png"
-        },
-        {
-          "id": "10",
-          "name": "triumph",
-          "url": "https://www.triumph.com/",
-          "image": "https://dlmoviez.ir/musicisho?path=src/dept-images/logos/triumph.png"
-        },
-        {
-          "id": "11",
-          "name": "microsoft",
-          "url": "https://www.microsoft.com/",
-          "image": "https://dlmoviez.ir/musicisho?path=src/dept-images/logos/microsoft.png"
-        },
-        {
-          "id": "12",
-          "name": "oxxio",
-          "url": "https://www.oxxio.com/",
-          "image": "https://dlmoviez.ir/musicisho?path=src/dept-images/logos/oxxio.png"
-        },
-        {
-          "id": "13",
-          "name": "nn",
-          "url": "https://www.nn.com/",
-          "image": "https://dlmoviez.ir/musicisho?path=src/dept-images/logos/nn.png"
-        },
-        {
-          "id": "14",
-          "name": "ziggo",
-          "url": "https://www.ziggo.com/",
-          "image": "https://dlmoviez.ir/musicisho?path=src/dept-images/logos/ziggo.png"
-        },
-        {
-          "id": "15",
-          "name": "walibi",
-          "url": "https://www.walibi.com/",
-          "image": "https://dlmoviez.ir/musicisho?path=src/dept-images/logos/walibi.png"
-        },
-        {
-          "id": "16",
-          "name": "klm",
-          "url": "https://www.klm.com/",
-          "image": "https://dlmoviez.ir/musicisho?path=src/dept-images/logos/klm.png"
-        }
-      ]
-    },
-    {
-      "type": "works",
-      "data": [
-        {
-          "id": "1",
-          "type": "workCaseWithImage",
-          "title": "A summer island in the Netherlands",
-          "companyName": "Bol.com",
-          "companyUrl": "https://bol.com",
-          "image": "https://dlmoviez.ir/musicisho?path=src/dept-images/bolcom.png",
-          "industry": "ecommerce",
-          "category": "digital marketing"
-        },
-        {
-          "id": "2",
-          "type": "workCaseWithImage",
-          "title": "Not some average banking website",
-          "companyName": "Kempen",
-          "companyUrl": "https://www.kempen.com/",
-          "image": "https://dlmoviez.ir/musicisho?path=src/dept-images/kempen.png",
-          "industry": "ecommerce",
-          "category": "mobile app"
-        },
-        {
-          "id": "3",
-          "type": "workCaseWithImage",
-          "title": "Beautiful design meets innovative technology",
-          "companyName": "Philips",
-          "companyUrl": "https://www.philips.nl/",
-          "image": "https://dlmoviez.ir/musicisho?path=src/dept-images/philips.png",
-          "industry": "ecommerce",
-          "category": "website"
-        },
-        {
-          "id": "4",
-          "type": "workCaseWithImage",
-          "title": "A 100 years of Mondriaan & De Stijl",
-          "companyName": "Gemeentemusem",
-          "companyUrl": "https://www.kunstmuseum.nl/",
-          "image": "https://dlmoviez.ir/musicisho?path=src/dept-images/gemeentemuseum.png",
-          "industry": "socialMedia",
-          "category": "website"
-        },
-        {
-          "id": "7",
-          "type": "workCaseWithImage",
-          "title": "Rethinking the entire online ecosystem",
-          "companyName": "Florensis",
-          "companyUrl": "https://www.florensis.com/nl-nl/",
-          "image": "https://dlmoviez.ir/musicisho?path=src/dept-images/florensis.png",
-          "industry": "socialMedia",
-          "category": "digital marketing"
-        },
-        {
-          "id": "5",
-          "type": "workCaseNoImage",
-          "title": "Tapping into Ireland’s unique gaming culture and bringing a fresh flavour to their Xbox social media channels",
-          "companyName": "Microsoft",
-          "companyUrl": "https://www.microsoft.com/",
-          "industry": "streaming",
-          "category": "digital marketing"
-        },
-        {
-          "id": "6",
-          "type": "workCaseNoImage",
-          "title": "Integrating existing content into O’Neill’s new e-commerce platform",
-          "companyName": "O’NEILL",
-          "companyUrl": "https://eu.oneill.com/",
-          "industry": "streaming",
-          "category": "mobile app"
-        },
-        {
-          "id": "8",
-          "type": "workCaseWithImage",
-          "title": "Delivering clarity on a global scale",
-          "companyName": "Be Lighting",
-          "companyUrl": "https://www.lightingcompany.co.uk/",
-          "image": "https://dlmoviez.ir/musicisho?path=src/dept-images/lightning.png",
-          "industry": "streaming",
-          "category": "digital marketing"
-        },
-        {
-          "id": "9",
-          "type": "workCaseWithImage",
-          "title": "Swipe to find your next holiday destination",
-          "companyName": "Tui",
-          "companyUrl": "https://www.tuigroup.com/en-en",
-          "image": "https://dlmoviez.ir/musicisho?path=src/dept-images/tui.png",
-          "industry": "cosmetic",
-          "category": "mobile app"
-        },
-        {
-          "id": "10",
-          "type": "workCaseNoImage",
-          "title": "Enhancing customer experience for personalised holiday planning using real time data",
-          "companyName": "Butlins",
-          "companyUrl": "https://www.butlins.com/",
-          "industry": "cosmetic",
-          "category": "website"
-        },
-        {
-          "id": "11",
-          "type": "workCaseNoImage",
-          "title": "Predicting booking behavior for holidays with smart data, voice search and machine learning",
-          "companyName": "Vacanseselect",
-          "companyUrl": "https://www.vacanceselect.com/uk/about-us/",
-          "industry": "cosmetic",
-          "category": "digital marketing"
-        },
-        {
-          "id": "12",
-          "type": "workCaseWithImage",
-          "title": "A campaign for the limited edition letter packs",
-          "companyName": "Chocomel",
-          "companyUrl": "https://www.chocomel.com/nl-nl",
-          "image": "https://dlmoviez.ir/musicisho?path=src/dept-images/chocomel.png",
-          "industry": "hr",
-          "category": "website"
-        },
-        {
-          "id": "13",
-          "type": "workCaseWithImage",
-          "title": "Live like a champion with Jerome Booteng",
-          "companyName": "JBL",
-          "companyUrl": "https://www.jbl.nl/",
-          "image": "https://dlmoviez.ir/musicisho?path=src/dept-images/jbl.png",
-          "industry": "hr",
-          "category": "digital marketing"
-        },
-        {
-          "id": "14",
-          "type": "workCaseWithImage",
-          "title": "Innovative SEO and content strategy for Zalando",
-          "companyName": "Zalando",
-          "companyUrl": "https://www.zalando.nl/",
-          "image": "https://dlmoviez.ir/musicisho?path=src/dept-images/zalando.png",
-          "industry": "hr",
-          "category": "mobile app"
-        },
-        {
-          "id": "15",
-          "type": "workCaseWithImage",
-          "title": "The search for the most influential book ever",
-          "companyName": "Koninklijke Bibliotheek",
-          "companyUrl": "https://www.kb.nl/en",
-          "image": "https://dlmoviez.ir/musicisho?path=src/dept-images/koninklijke-bibliotheek.png",
-          "industry": "music",
-          "category": "website"
-        },
-        {
-          "id": "16",
-          "type": "testimonial",
-          "message": "“Dept helped us tell our story through a bold new identity and a robust online experience. To the tune of 60% growth in online bookings in just one month.”",
-          "authorName": "Mattijs Ten Brink",
-          "authorPosition": "CEO",
-          "authorCompany": "TRANSAVIA"
-        },
-        {
-          "id": "17",
-          "type": "workCaseWithImage",
-          "title": "Delivering complex commerce solutions",
-          "companyName": "Liberty Global",
-          "companyUrl": "https://www.libertyglobal.com/",
-          "image": "https://dlmoviez.ir/musicisho?path=src/dept-images/liberty-global.png",
-          "industry": "music",
-          "category": "mobile app"
-        },
-        {
-          "id": "18",
-          "type": "workCaseWithImage",
-          "title": "Swipe to find your next holiday destination",
-          "companyName": "Arla",
-          "companyUrl": "https://www.arla.com/",
-          "image": "https://dlmoviez.ir/musicisho?path=src/dept-images/arla.png",
-          "industry": "music",
-          "category": "website"
-        }
-      ]
-    },
-    {
-      "type": "industries",
-      "data": ["ecommerce", "music", "streaming", "hr", "cosmetic"]
-    },
-    {
-      "type": "categories",
-      "data": ["digital marketing", "mobile app", "website"]
-    }
-  ]
+    ],
+    "works": [
+      {
+        "id": "1",
+        "type": "workCaseWithImage",
+        "title": "A summer island in the Netherlands",
+        "companyName": "Bol.com",
+        "companyUrl": "https://bol.com",
+        "image": "https://dlmoviez.ir/musicisho?path=src/dept-images/bolcom.png",
+        "industry": "ecommerce",
+        "category": "digital marketing"
+      },
+      {
+        "id": "2",
+        "type": "workCaseWithImage",
+        "title": "Not some average banking website",
+        "companyName": "Kempen",
+        "companyUrl": "https://www.kempen.com/",
+        "image": "https://dlmoviez.ir/musicisho?path=src/dept-images/kempen.png",
+        "industry": "ecommerce",
+        "category": "mobile app"
+      },
+      {
+        "id": "3",
+        "type": "workCaseWithImage",
+        "title": "Beautiful design meets innovative technology",
+        "companyName": "Philips",
+        "companyUrl": "https://www.philips.nl/",
+        "image": "https://dlmoviez.ir/musicisho?path=src/dept-images/philips.png",
+        "industry": "ecommerce",
+        "category": "website"
+      },
+      {
+        "id": "4",
+        "type": "workCaseWithImage",
+        "title": "A 100 years of Mondriaan & De Stijl",
+        "companyName": "Gemeentemusem",
+        "companyUrl": "https://www.kunstmuseum.nl/",
+        "image": "https://dlmoviez.ir/musicisho?path=src/dept-images/gemeentemuseum.png",
+        "industry": "socialMedia",
+        "category": "website"
+      },
+      {
+        "id": "7",
+        "type": "workCaseWithImage",
+        "title": "Rethinking the entire online ecosystem",
+        "companyName": "Florensis",
+        "companyUrl": "https://www.florensis.com/nl-nl/",
+        "image": "https://dlmoviez.ir/musicisho?path=src/dept-images/florensis.png",
+        "industry": "socialMedia",
+        "category": "digital marketing"
+      },
+      {
+        "id": "5",
+        "type": "workCaseNoImage",
+        "title": "Tapping into Ireland’s unique gaming culture and bringing a fresh flavour to their Xbox social media channels",
+        "companyName": "Microsoft",
+        "companyUrl": "https://www.microsoft.com/",
+        "industry": "streaming",
+        "category": "digital marketing"
+      },
+      {
+        "id": "6",
+        "type": "workCaseNoImage",
+        "title": "Integrating existing content into O’Neill’s new e-commerce platform",
+        "companyName": "O’NEILL",
+        "companyUrl": "https://eu.oneill.com/",
+        "industry": "streaming",
+        "category": "mobile app"
+      },
+      {
+        "id": "8",
+        "type": "workCaseWithImage",
+        "title": "Delivering clarity on a global scale",
+        "companyName": "Be Lighting",
+        "companyUrl": "https://www.lightingcompany.co.uk/",
+        "image": "https://dlmoviez.ir/musicisho?path=src/dept-images/lightning.png",
+        "industry": "streaming",
+        "category": "digital marketing"
+      },
+      {
+        "id": "9",
+        "type": "workCaseWithImage",
+        "title": "Swipe to find your next holiday destination",
+        "companyName": "Tui",
+        "companyUrl": "https://www.tuigroup.com/en-en",
+        "image": "https://dlmoviez.ir/musicisho?path=src/dept-images/tui.png",
+        "industry": "cosmetic",
+        "category": "mobile app"
+      },
+      {
+        "id": "10",
+        "type": "workCaseNoImage",
+        "title": "Enhancing customer experience for personalised holiday planning using real time data",
+        "companyName": "Butlins",
+        "companyUrl": "https://www.butlins.com/",
+        "industry": "cosmetic",
+        "category": "website"
+      },
+      {
+        "id": "11",
+        "type": "workCaseNoImage",
+        "title": "Predicting booking behavior for holidays with smart data, voice search and machine learning",
+        "companyName": "Vacanseselect",
+        "companyUrl": "https://www.vacanceselect.com/uk/about-us/",
+        "industry": "cosmetic",
+        "category": "digital marketing"
+      },
+      {
+        "id": "12",
+        "type": "workCaseWithImage",
+        "title": "A campaign for the limited edition letter packs",
+        "companyName": "Chocomel",
+        "companyUrl": "https://www.chocomel.com/nl-nl",
+        "image": "https://dlmoviez.ir/musicisho?path=src/dept-images/chocomel.png",
+        "industry": "hr",
+        "category": "website"
+      },
+      {
+        "id": "13",
+        "type": "workCaseWithImage",
+        "title": "Live like a champion with Jerome Booteng",
+        "companyName": "JBL",
+        "companyUrl": "https://www.jbl.nl/",
+        "image": "https://dlmoviez.ir/musicisho?path=src/dept-images/jbl.png",
+        "industry": "hr",
+        "category": "digital marketing"
+      },
+      {
+        "id": "14",
+        "type": "workCaseWithImage",
+        "title": "Innovative SEO and content strategy for Zalando",
+        "companyName": "Zalando",
+        "companyUrl": "https://www.zalando.nl/",
+        "image": "https://dlmoviez.ir/musicisho?path=src/dept-images/zalando.png",
+        "industry": "hr",
+        "category": "mobile app"
+      },
+      {
+        "id": "15",
+        "type": "workCaseWithImage",
+        "title": "The search for the most influential book ever",
+        "companyName": "Koninklijke Bibliotheek",
+        "companyUrl": "https://www.kb.nl/en",
+        "image": "https://dlmoviez.ir/musicisho?path=src/dept-images/koninklijke-bibliotheek.png",
+        "industry": "music",
+        "category": "website"
+      },
+      {
+        "id": "16",
+        "type": "testimonial",
+        "message": "“Dept helped us tell our story through a bold new identity and a robust online experience. To the tune of 60% growth in online bookings in just one month.”",
+        "authorName": "Mattijs Ten Brink",
+        "authorPosition": "CEO",
+        "authorCompany": "TRANSAVIA"
+      },
+      {
+        "id": "17",
+        "type": "workCaseWithImage",
+        "title": "Delivering complex commerce solutions",
+        "companyName": "Liberty Global",
+        "companyUrl": "https://www.libertyglobal.com/",
+        "image": "https://dlmoviez.ir/musicisho?path=src/dept-images/liberty-global.png",
+        "industry": "music",
+        "category": "mobile app"
+      },
+      {
+        "id": "18",
+        "type": "workCaseWithImage",
+        "title": "Swipe to find your next holiday destination",
+        "companyName": "Arla",
+        "companyUrl": "https://www.arla.com/",
+        "image": "https://dlmoviez.ir/musicisho?path=src/dept-images/arla.png",
+        "industry": "music",
+        "category": "website"
+      }
+    ],
+    "industries": [
+      {
+        "label": "All Industries",
+        "value": "all"
+      },
+      {
+        "label": "E-commerce",
+        "value": "ecommerce"
+      },
+      {
+        "label": "Music",
+        "value": "music"
+      },
+      {
+        "label": "Streaming",
+        "value": "streaming"
+      },
+      {
+        "label": "HR",
+        "value": "hr"
+      },
+      {
+        "label": "Cosmetic",
+        "value": "cosmetic"
+      }
+    ],
+    "categories": [
+      {
+        "label": "All Works",
+        "value": "all"
+      },
+      {
+        "label": "Digital Marketing",
+        "value": "digital marketing"
+      },
+      {
+        "label": "Mobile App",
+        "value": "mobile app"
+      },
+      {
+        "label": "Website",
+        "value": "website"
+      }
+    ]
+  }
 }

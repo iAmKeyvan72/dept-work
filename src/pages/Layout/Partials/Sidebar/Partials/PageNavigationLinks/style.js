@@ -54,10 +54,11 @@ export const StyledPageNavigationLinks = styled.ul`
   }
 
   @media (min-width: 768px) {
-    height: 80vh;
+    height: 70vh;
     overflow-y: scroll;
     -ms-overflow-style: none;
     scrollbar-width: none;
+    padding-bottom: 4rem;
 
     &::-webkit-scrollbar {
       display: none;

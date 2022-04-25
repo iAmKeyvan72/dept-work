@@ -6,8 +6,8 @@ const Select = ({ label, name, options, ...rest }) => (
     <label htmlFor={name}>{label}</label>
     <select id={name} name={name} {...rest}>
       {options.map((option, index) => (
-        <option key={option + index} value={index === 0 ? undefined : option}>
-          {option}
+        <option key={option.value + index} value={option.value}>
+          {option.label}
         </option>
       ))}
     </select>

@@ -1,0 +1,2 @@
+export const SET_WORKS = 'SET_WORKS';
+export const GET_FILTERED_WORKS = 'GET_FILTERED_WORKS';

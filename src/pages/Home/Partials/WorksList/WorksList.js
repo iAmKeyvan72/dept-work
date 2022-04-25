@@ -14,17 +14,11 @@ import {
 
 import { StyledFiltersContainer, StyledListSection } from './style';
 
-const WorksList = ({
-  works,
-  industries,
-  categories,
-  filterWorks,
-  filteredWorks,
-}) => {
+const WorksList = ({ industries, categories, filterWorks, filteredWorks }) => {
   const [search, setSearch] = useSearchParams();
 
-  const [category, setCategory] = useState(undefined || search.get('category'));
-  const [industry, setIndustry] = useState(undefined || search.get('industry'));
+  const [category, setCategory] = useState(search.get('category') || 'all');
+  const [industry, setIndustry] = useState(search.get('industry') || 'all');
 
   useEffect(() => {
     filterWorks(category, industry);
@@ -40,18 +34,18 @@ const WorksList = ({
             name="categories"
             value={category || search.get('category')}
             onChange={(e) => setCategory(e.target.value)}
-            options={['all works', ...categories]}
+            options={categories}
           />
           <Select
             label="in"
             name="industries"
             value={industry || search.get('industry')}
             onChange={(e) => setIndustry(e.target.value)}
-            options={['all industries', ...industries]}
+            options={industries}
           />
         </StyledFiltersContainer>
         <StyledListSection>
-          <DynamicContent list={filteredWorks ? filteredWorks : works} />
+          <DynamicContent list={filteredWorks} />
         </StyledListSection>
       </Container>
     </section>

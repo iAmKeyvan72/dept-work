@@ -8,19 +8,17 @@ export const getHomeListStart = () => ({
   type: types.GET_HOME_LIST_START,
 });
 
-export const getHomeListSuccess = (payload) => {
-  return {
-    type: types.GET_HOME_LIST_SUCCESS,
-    payload,
-  };
-};
+export const getHomeListSuccess = () => ({
+  type: types.GET_HOME_LIST_SUCCESS,
+});
 
 export const getHomeListError = (payload) => ({
   type: types.GET_HOME_LIST_ERROR,
   payload,
 });
 
-export const getFilteredWorks = (payload) => ({
-  type: types.GET_FILTERED_WORKS,
-  payload,
-});
+export * from './clients/actions';
+export * from './works/actions';
+export * from './categories/actions';
+export * from './industries/actions';
+export * from './hero/actions';
