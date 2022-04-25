@@ -29,7 +29,6 @@ export const filterData = (data, category, industry) => {
       const noImagesFiltered = item.data.filter((item) => {
         return filterCheck(item, category, industry);
       });
-      console.log('noImagesFiltered', noImagesFiltered);
       if (noImagesFiltered.length > 0) {
         filteredWorks.push({ ...item, data: noImagesFiltered });
       }

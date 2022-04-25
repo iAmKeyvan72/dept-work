@@ -12,9 +12,15 @@ export const StyledWorkCaseWithImage = styled.div`
   display: flex;
   flex-direction: column;
   margin: 1.5rem auto;
-  img {
+
+  span {
     width: 100%;
+
+    img {
+      width: 100%;
+    }
   }
+
   .companyName {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;

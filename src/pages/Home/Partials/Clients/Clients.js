@@ -19,6 +19,7 @@ const Clients = ({ clients }) => {
     infinite: true,
     centerPadding: '20px',
     rows: 4,
+    lazyLoad: true,
     slidesToShow: 4,
     responsive: [
       {

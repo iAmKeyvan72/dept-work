@@ -1,4 +1,5 @@
 import React from 'react';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 import Button from '../Button/Button';
 import {
   StyledWorkCaseWithImage,
@@ -10,7 +11,7 @@ const WorkCaseWithImage = ({ image, companyName, companyUrl, title }) => {
     <StyledWorkCaseWithImageListItem>
       <StyledWorkCaseWithImage>
         <a href={`/${decodeURI(title)}`} title={title}>
-          <img src={image} alt={title} />
+          <LazyLoadImage src={image} alt={title} effect="blur" threshold={75} />
         </a>
         <a href={companyUrl} title={companyName} className="companyName">
           {companyName}

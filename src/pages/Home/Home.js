@@ -11,7 +11,7 @@ import { getHomeErrors, getHomeLoading } from '../../ducks/home/selectors';
 const Home = ({ loading, errors, getHomeList }) => {
   useEffect(() => {
     getHomeList();
-  }, []);
+  }, [getHomeList]);
 
   if (loading) return <div>Loading.......</div>;
 
