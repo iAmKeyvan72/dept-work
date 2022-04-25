@@ -1,8 +1,8 @@
 import React from 'react';
 
 import WorkCaseWithImage from '../WorkCaseWithImage/WorkCaseWithImage';
-import WorkCaseNoImage from '../WorkCaseNoImage/WorkCaseNoImage';
 import Testimonial from '../Testimonial/Testimonial';
+import WorkCaseNoImageList from '../WorkCaseNoImageList/WorkCaseNoImageList';
 
 const DynamicContent = ({ list }) => {
   const workListTypes = {
@@ -12,8 +12,8 @@ const DynamicContent = ({ list }) => {
     testimonial: {
       component: Testimonial,
     },
-    workCaseNoImage: {
-      component: WorkCaseNoImage,
+    workCaseNoImageList: {
+      component: WorkCaseNoImageList,
     },
   };
 

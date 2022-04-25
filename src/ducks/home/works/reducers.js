@@ -1,5 +1,5 @@
 import * as types from './types';
-import { filterData } from './utils';
+import { filterData, transformData } from './utils';
 
 const initialState = { data: [], filteredData: [] };
 
@@ -8,7 +8,7 @@ const worksReducer = (state = initialState, action) => {
 
   switch (type) {
     case types.SET_WORKS:
-      return { ...state, data: payload };
+      return { ...state, data: transformData(payload) };
 
     case types.GET_FILTERED_WORKS: {
       const { category, industry } = payload;

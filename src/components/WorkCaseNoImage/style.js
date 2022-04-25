@@ -1,15 +1,5 @@
 import styled from 'styled-components';
 
-export const StyledWorkCaseNoImageListItem = styled.li`
-  @media (min-width: 768px) {
-    display: flex;
-    flex-direction: column;
-    padding: 2rem 0;
-    margin: 0 2rem;
-    flex: 1;
-  }
-`;
-
 export const StyledWorkCaseNoImage = styled.div`
   padding: 1rem 0;
   border-top: 1px solid var(--border);
