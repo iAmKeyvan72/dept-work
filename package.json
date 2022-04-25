@@ -25,7 +25,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "server": "json-server --watch src/mocks/db.json",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "dev": "yarn server &  yarn start"
   },
   "eslintConfig": {
     "extends": [
