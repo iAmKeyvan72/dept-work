@@ -10,7 +10,14 @@ const buttonStyle = `
   cursor: pointer;
   text-align: center;
   border: none;
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
 `;
 
 const primaryStyle = `

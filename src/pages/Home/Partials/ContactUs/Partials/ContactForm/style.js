@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { StyledInputText } from '../../../../../../components/InputText/style';
+import ReactLoading from 'react-loading';
 
 export const StyledContactForm = styled.form`
   @media (min-width: 768px) {
@@ -20,4 +21,12 @@ export const StyledInputsWrapper = styled.div`
       flex: 1 calc(50% - 2rem);
     }
   }
+`;
+
+export const StyledButtonLoader = styled(ReactLoading)`
+  margin-left: -20px;
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;

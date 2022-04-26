@@ -3,10 +3,15 @@ import { connect } from 'react-redux';
 import { useForm } from 'react-hook-form';
 import InputText from '../../../../../../components/InputText/InputText';
 import Button from '../../../../../../components/Button/Button';
-import { StyledContactForm, StyledInputsWrapper } from './style';
+import {
+  StyledButtonLoader,
+  StyledContactForm,
+  StyledInputsWrapper,
+} from './style';
 import { submitContactUsFormRequest } from '../../../../../../ducks/home/contactUs/actions';
+import { getContactUsLoading } from '../../../../../../ducks/home/selectors';
 
-const ContactForm = ({ submitContactUsForm }) => {
+const ContactForm = ({ loading, submitContactUsForm }) => {
   const {
     register,
     handleSubmit,
@@ -43,15 +48,27 @@ const ContactForm = ({ submitContactUsForm }) => {
           error={errors.message?.message}
         />
       </StyledInputsWrapper>
-      <Button element="button" uiType="primary" type="submit">
+      <Button
+        disabled={loading}
+        element="button"
+        uiType="primary"
+        type="submit"
+      >
+        {loading && (
+          <StyledButtonLoader height={18} width={35} type="bubbles" />
+        )}
         Send
       </Button>
     </StyledContactForm>
   );
 };
 
+const mapStateToProps = (state) => ({
+  loading: getContactUsLoading(state),
+});
+
 const mapDispatchToProps = (dispatch) => ({
   submitContactUsForm: (data) => dispatch(submitContactUsFormRequest(data)),
 });
 
-export default connect(null, mapDispatchToProps)(ContactForm);
+export default connect(mapStateToProps, mapDispatchToProps)(ContactForm);

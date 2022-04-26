@@ -13,3 +13,6 @@ export const filteredWorks = createSelector(
   getWorks,
   (works) => works.filteredData
 );
+
+export const getContactUsLoading = (state) => state.contactUs.loading;
+export const getContactUsError = (state) => state.contactUs.error;
