@@ -20,6 +20,12 @@ export const StyledGotToTop = styled.button`
     &::before {
       content: '↑';
       font-size: 2.5rem;
+      transition: all 0.3s ease-in-out;
+    }
+
+    &:hover&::before {
+      transform: scale(1.4);
+      margin-bottom: 0.5rem;
     }
   }
 `;

@@ -32,6 +32,7 @@ export const StyledHeroTitle = styled.h1`
   margin: auto 0;
   margin-left: 2rem;
   line-height: 1;
+  word-break: break-word;
 
   @media (min-width: 768px) {
     margin: auto 0;
