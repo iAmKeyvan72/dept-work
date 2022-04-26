@@ -11,6 +11,7 @@ import {
   getIndustries,
   getWorks,
 } from '../../../../ducks/home/selectors';
+import { worksListMotions } from '../../../../constants/motions';
 
 import { StyledFiltersContainer, StyledListSection } from './style';
 
@@ -44,7 +45,11 @@ const WorksList = ({ industries, categories, filterWorks, filteredWorks }) => {
             options={industries}
           />
         </StyledFiltersContainer>
-        <StyledListSection>
+        <StyledListSection
+          variants={worksListMotions}
+          initial="hidden"
+          animate="visible"
+        >
           <DynamicContent list={filteredWorks} />
         </StyledListSection>
       </Container>

@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import Button from '../../../../components/Button/Button';
+import strings from '../../../../constants/strings';
 import { getHero } from '../../../../ducks/home/selectors';
 import {
   StyledHero,
@@ -16,7 +17,7 @@ const Hero = ({ image, title, url }) => {
         <StyledHeroTitle>{title}</StyledHeroTitle>
         <StyledHeroButtonContainer>
           <Button element="a" href={url} uiType="secondary">
-            view case
+            {strings.labels.viewCase}
           </Button>
         </StyledHeroButtonContainer>
       </StyledHeroContainer>

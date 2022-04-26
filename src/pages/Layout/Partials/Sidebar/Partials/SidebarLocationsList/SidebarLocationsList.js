@@ -1,21 +1,22 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import strings from '../../../../../../constants/strings';
 import { StyledSidebarLocationsListWrapper } from './style';
 
 const locations = [
-  { title: 'global', url: '/gl' },
-  { title: 'nederland', url: '/nl' },
-  { title: 'united states', url: '/us' },
-  { title: 'ireland', url: '/ie' },
-  { title: 'united kingdom', url: '/uk' },
-  { title: 'deutschland', url: '/gr' },
-  { title: 'schweiz', url: '/sch' },
+  { title: strings.locations.gl, url: '/gl' },
+  { title: strings.locations.nl, url: '/nl' },
+  { title: strings.locations.us, url: '/us' },
+  { title: strings.locations.ie, url: '/ie' },
+  { title: strings.locations.uk, url: '/uk' },
+  { title: strings.locations.de, url: '/de' },
+  { title: strings.locations.sw, url: '/sw' },
 ];
 
 const SidebarLocationsList = () => {
   return (
     <StyledSidebarLocationsListWrapper>
-      <h6>landen</h6>
+      <h6>{strings.locations.title}</h6>
       <ul>
         {locations.map((location, index) => (
           <li key={location.title + index}>

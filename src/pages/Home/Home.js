@@ -10,6 +10,7 @@ import ReactLoading from 'react-loading';
 import { getHomeListRequest } from '../../ducks/home/actions';
 import { getHomeErrors, getHomeLoading } from '../../ducks/home/selectors';
 import { StyledLoadingHomePage } from './style';
+import strings from '../../constants/strings';
 
 const Home = ({ loading, errors, getHomeList }) => {
   useEffect(() => {
@@ -23,7 +24,7 @@ const Home = ({ loading, errors, getHomeList }) => {
       </StyledLoadingHomePage>
     );
 
-  if (errors) return <div>Something bad happened</div>;
+  if (errors) return <div>{strings.errors.errorOnPageLoad}</div>;
 
   return (
     <>

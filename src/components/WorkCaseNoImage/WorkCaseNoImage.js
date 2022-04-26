@@ -1,9 +1,16 @@
 import React from 'react';
 import { StyledWorkCaseNoImage } from './style';
 import Button from '../Button/Button';
+import { workItemMotions } from '../../constants/motions';
+import strings from '../../constants/strings';
 
 const WorkCaseNoImage = ({ companyName, companyUrl, title }) => (
-  <StyledWorkCaseNoImage>
+  <StyledWorkCaseNoImage
+    variants={workItemMotions}
+    initial="hidden"
+    animate="visible"
+    whileHover="hover"
+  >
     <a href={companyUrl} className="companyName">
       {companyName}
     </a>
@@ -16,7 +23,7 @@ const WorkCaseNoImage = ({ companyName, companyUrl, title }) => (
       href={`/${decodeURI(title)}`}
       className="onlyDesktop"
     >
-      view case
+      {strings.labels.viewCase}
     </Button>
   </StyledWorkCaseNoImage>
 );

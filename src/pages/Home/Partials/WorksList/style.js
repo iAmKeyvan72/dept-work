@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 
 export const StyledFiltersContainer = styled.div`
   display: flex;
@@ -13,7 +14,7 @@ export const StyledFiltersContainer = styled.div`
   }
 `;
 
-export const StyledListSection = styled.ul`
+export const StyledListSection = styled(motion.ul)`
   display: flex;
   flex-direction: column;
   @media (min-width: 768px) {

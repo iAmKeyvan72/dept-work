@@ -1,21 +1,22 @@
 import React from 'react';
+import strings from '../../../../../../constants/strings';
 import { StyledSidebarSocials } from './style';
 
 const socials = [
   {
-    name: 'Facebook',
+    name: strings.socials.fb,
     url: 'https://www.facebook.com/',
   },
   {
-    name: 'Instagram',
+    name: strings.socials.instagram,
     url: 'https://www.instagram.com/',
   },
   {
-    name: 'Twitter',
+    name: strings.socials.twitter,
     url: 'https://www.twitter.com/',
   },
   {
-    name: 'LinkedIn',
+    name: strings.socials.linkedin,
     url: 'https://www.linkedin.com/',
   },
 ];

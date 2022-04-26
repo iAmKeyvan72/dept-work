@@ -6,12 +6,13 @@ import {
 } from './style';
 
 import ContactForm from './Partials/ContactForm/ContactForm';
+import strings from '../../../../constants/strings';
 
 const ContactUs = () => (
   <StyledContactUsSection>
     <StyledContactUsContainer>
       <StyledContactSectionTitle>
-        questions? we are here to help!
+        {strings.sections.contactUs.title}
       </StyledContactSectionTitle>
       <ContactForm />
     </StyledContactUsContainer>

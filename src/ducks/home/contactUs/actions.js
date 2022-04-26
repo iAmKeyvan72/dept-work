@@ -4,8 +4,9 @@ export const submitContactUsFormStart = () => ({
   type: types.SUBMIT_FORM_START,
 });
 
-export const submitContactUsFormSuccess = () => ({
+export const submitContactUsFormSuccess = (payload) => ({
   type: types.SUBMIT_FORM_SUCCESS,
+  payload,
 });
 
 export const submitContactUsFormError = (payload) => ({

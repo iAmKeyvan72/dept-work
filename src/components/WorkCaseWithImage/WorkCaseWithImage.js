@@ -1,5 +1,7 @@
 import React from 'react';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
+import { workItemMotions } from '../../constants/motions';
+import strings from '../../constants/strings';
 import Button from '../Button/Button';
 import {
   StyledWorkCaseWithImage,
@@ -8,7 +10,12 @@ import {
 
 const WorkCaseWithImage = ({ image, companyName, companyUrl, title }) => {
   return (
-    <StyledWorkCaseWithImageListItem>
+    <StyledWorkCaseWithImageListItem
+      variants={workItemMotions}
+      initial="hidden"
+      animate="visible"
+      whileHover="hover"
+    >
       <StyledWorkCaseWithImage>
         <a href={`/${decodeURI(title)}`} title={title}>
           <LazyLoadImage src={image} alt={title} effect="blur" threshold={75} />
@@ -25,7 +32,7 @@ const WorkCaseWithImage = ({ image, companyName, companyUrl, title }) => {
           href={`/${decodeURI(title)}`}
           className="onlyDesktop"
         >
-          view case
+          {strings.labels.viewCase}
         </Button>
       </StyledWorkCaseWithImage>
     </StyledWorkCaseWithImageListItem>

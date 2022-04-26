@@ -1,6 +1,7 @@
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 
-export const StyledWorkCaseWithImageListItem = styled.li`
+export const StyledWorkCaseWithImageListItem = styled(motion.li)`
   @media (min-width: 768px) {
     display: flex;
     flex-direction: column;

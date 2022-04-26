@@ -1,4 +1,5 @@
 import React from 'react';
+import strings from '../../../../../../constants/strings';
 import { StyledGotToTop } from './style';
 
 const GoToTop = () => {
@@ -9,7 +10,9 @@ const GoToTop = () => {
     });
   };
 
-  return <StyledGotToTop onClick={scrollToTop}>TOP</StyledGotToTop>;
+  return (
+    <StyledGotToTop onClick={scrollToTop}>{strings.labels.top}</StyledGotToTop>
+  );
 };
 
 export default GoToTop;

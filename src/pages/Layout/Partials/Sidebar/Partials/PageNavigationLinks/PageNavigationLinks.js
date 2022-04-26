@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import strings from '../../../../../../constants/strings';
 
 import {
   StyledPageNavigationLinks,
@@ -8,40 +9,39 @@ import {
 
 const links = [
   {
-    name: 'Home',
+    name: strings.menu.home,
     url: '/',
   },
   {
-    name: 'Werk',
+    name: strings.menu.werk,
     url: '/werk',
   },
   {
-    name: 'Over',
+    name: strings.menu.over,
     url: '/over',
   },
   {
-    name: 'Diensten',
+    name: strings.menu.diensten,
     url: '/diensten',
   },
   {
-    name: 'Partners',
+    name: strings.menu.partners,
     url: '/partners',
   },
   {
-    name: 'Stories',
+    name: strings.menu.stories,
     url: '/stories',
   },
   {
-    name: 'Vacatures',
+    name: strings.menu.vacatures,
     url: '/vacatures',
   },
   {
-    name: 'Events',
+    name: strings.menu.events,
     url: '/events',
   },
-
   {
-    name: 'Contact',
+    name: strings.menu.contact,
     url: '/contact',
   },
 ];

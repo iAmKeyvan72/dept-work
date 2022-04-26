@@ -13,6 +13,7 @@ import SectionTitle from '../../../../components/SectionTitle/SectionTitle';
 import Container from '../../../../components/Container/Container';
 import { connect } from 'react-redux';
 import { getClients } from '../../../../ducks/home/selectors';
+import strings from '../../../../constants/strings';
 
 const Clients = ({ clients }) => {
   const sliderSettings = {
@@ -35,11 +36,9 @@ const Clients = ({ clients }) => {
   return (
     <StyledClientsSection>
       <Container>
-        <SectionTitle title="Clients" />
+        <SectionTitle title={strings.sections.clients.title} />
         <StyledClientSectionDescription>
-          We value a great working relationship with our clients above all else.
-          It’s why they often come to our parties. It’s also why we’re able to
-          challenge and inspire them to reach for the stars.
+          {strings.sections.clients.description}{' '}
         </StyledClientSectionDescription>
 
         <StyledClientsSlider {...sliderSettings}>

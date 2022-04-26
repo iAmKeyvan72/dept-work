@@ -1,30 +1,31 @@
 import React from 'react';
+import strings from '../../../../../../constants/strings';
 
 import { StyledFooterSiteLinks } from './style';
 
 const links = [
   {
-    name: 'Work',
+    name: strings.menu.work,
     url: '/',
   },
   {
-    name: 'Services',
+    name: strings.menu.services,
     url: '/services',
   },
   {
-    name: 'Stories',
+    name: strings.menu.stories,
     url: '/stories',
   },
   {
-    name: 'About',
+    name: strings.menu.about,
     url: '/about',
   },
   {
-    name: 'Careers',
+    name: strings.menu.careers,
     url: '/careers',
   },
   {
-    name: 'Contact',
+    name: strings.menu.contact,
     url: '/contact',
   },
 ];

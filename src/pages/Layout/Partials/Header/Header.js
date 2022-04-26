@@ -1,5 +1,6 @@
 import React from 'react';
 import Container from '../../../../components/Container/Container';
+import strings from '../../../../constants/strings';
 import { StyledHeader, StyledLogo, StyledMenuButton } from './style';
 
 const Header = ({ showMenu, toggleSidebar }) => {
@@ -13,12 +14,12 @@ const Header = ({ showMenu, toggleSidebar }) => {
         <nav>
           <StyledLogo
             href="/"
-            title="Dept"
+            title={strings.labels.companyName}
             className="icon icon-logo"
             clicked={showMenu}
           ></StyledLogo>
           <StyledMenuButton clicked={showMenu} onClick={handleClickMenu}>
-            Menu
+            {strings.labels.menu}
           </StyledMenuButton>
         </nav>
       </Container>

@@ -1,11 +1,15 @@
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 
-export const StyledWorkCaseNoImage = styled.div`
+export const StyledWorkCaseNoImage = styled(motion.div)`
   padding: 1rem 0;
-  border-top: 1px solid var(--border);
-  border-bottom: 1px solid var(--border);
   display: flex;
   flex-direction: column;
+  border-bottom: 1px solid var(--border);
+
+  &:first-child {
+    border-top: 1px solid var(--border);
+  }
 
   .companyName {
     font-family: Arial, Helvetica, sans-serif;

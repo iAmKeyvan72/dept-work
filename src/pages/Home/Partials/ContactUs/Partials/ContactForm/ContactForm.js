@@ -10,16 +10,19 @@ import {
 } from './style';
 import { submitContactUsFormRequest } from '../../../../../../ducks/home/contactUs/actions';
 import { getContactUsLoading } from '../../../../../../ducks/home/selectors';
+import strings from '../../../../../../constants/strings';
 
 const ContactForm = ({ loading, submitContactUsForm }) => {
   const {
     register,
     handleSubmit,
+    reset,
     formState: { errors },
   } = useForm();
 
   const onSubmit = async (data) => {
     await submitContactUsForm(data);
+    reset();
   };
 
   return (
@@ -29,14 +32,14 @@ const ContactForm = ({ loading, submitContactUsForm }) => {
           name="name"
           label="Name"
           register={register}
-          required={{ required: 'Please enter your name' }}
+          required={{ required: strings.errors.invalidName }}
           error={errors.name?.message}
         />
         <InputText
           name="email"
           label="Email"
           register={register}
-          required={{ required: 'Please enter a valid email' }}
+          required={{ required: strings.errors.invalidEmail }}
           error={errors.email?.message}
         />
         <InputText
@@ -44,7 +47,7 @@ const ContactForm = ({ loading, submitContactUsForm }) => {
           name="message"
           label="Message"
           register={register}
-          required={{ required: 'Please enter your message' }}
+          required={{ required: strings.errors.invalidMessage }}
           error={errors.message?.message}
         />
       </StyledInputsWrapper>
@@ -57,7 +60,7 @@ const ContactForm = ({ loading, submitContactUsForm }) => {
         {loading && (
           <StyledButtonLoader height={18} width={35} type="bubbles" />
         )}
-        Send
+        {strings.labels.send}
       </Button>
     </StyledContactForm>
   );

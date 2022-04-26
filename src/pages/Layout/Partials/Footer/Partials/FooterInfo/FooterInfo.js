@@ -1,4 +1,5 @@
 import React from 'react';
+import strings from '../../../../../../constants/strings';
 import { StyledFooterInfo, StyledFreeSpace } from './style';
 
 const FooterInfo = () => {
@@ -6,15 +7,15 @@ const FooterInfo = () => {
     <StyledFooterInfo>
       <StyledFreeSpace />
       <ul>
-        <li>Chamber of Commerce: 63464101</li>
-        <li>VAT: NL 8552.47.502.B01</li>
+        <li>{strings.labels.chamberOfCommerce}</li>
+        <li>{strings.labels.vat}</li>
         <li>
-          <a href="/terms" title="Terms and conditions">
-            Terms and conditions
+          <a href="/terms" title={strings.labels.terms}>
+            {strings.labels.terms}
           </a>
         </li>
       </ul>
-      <p className="copyright">© 2018 Dept Agency</p>
+      <p className="copyright">{strings.labels.copyright}</p>
     </StyledFooterInfo>
   );
 };
