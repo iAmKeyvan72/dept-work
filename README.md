@@ -5,4 +5,4 @@ cd dept-work
 yarn install
 yarn dev
 ```
-Now go to [localhost:3000](https://localhost:3000) on your browser.
+Now go to [localhost:3000](http://localhost:3000/) on your browser.
