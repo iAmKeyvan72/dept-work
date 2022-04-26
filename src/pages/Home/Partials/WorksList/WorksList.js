@@ -14,6 +14,7 @@ import {
 import { worksListMotions } from '../../../../constants/motions';
 
 import { StyledFiltersContainer, StyledListSection } from './style';
+import WorkCaseNoItemFound from '../../../../components/WorkCaseNoItemFound/WorkCaseNoItemFound';
 
 const WorksList = ({ industries, categories, filterWorks, filteredWorks }) => {
   const [search, setSearch] = useSearchParams();
@@ -45,13 +46,17 @@ const WorksList = ({ industries, categories, filterWorks, filteredWorks }) => {
             options={industries}
           />
         </StyledFiltersContainer>
-        <StyledListSection
-          variants={worksListMotions}
-          initial="hidden"
-          animate="visible"
-        >
-          <DynamicContent list={filteredWorks} />
-        </StyledListSection>
+        {filteredWorks.length > 1 ? (
+          <StyledListSection
+            variants={worksListMotions}
+            initial="hidden"
+            animate="visible"
+          >
+            <DynamicContent list={filteredWorks} />
+          </StyledListSection>
+        ) : (
+          <WorkCaseNoItemFound />
+        )}
       </Container>
     </section>
   );

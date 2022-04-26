@@ -16,6 +16,11 @@ const strings = {
     vat: 'VAT: NL 8552.47.502.B01',
   },
   sections: {
+    noItem: {
+      title: 'No items found',
+      description:
+        'Sorry, no items were found. Please try with another pair of filters.',
+    },
     clients: {
       title: 'Clients',
       description:
